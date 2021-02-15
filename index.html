@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country's API</title>
+</head>
+<body>
+
+    <script>
+
+        async function api(){
+            const API = 'https://restcountries.eu/rest/v2/name/Panama';
+            const response = await fetch(API);
+            const data = await response.json();
+            console.log(data);
+        }
+        api();
+
+    </script>
+
+</body>
+
+</html>
